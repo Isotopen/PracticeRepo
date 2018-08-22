@@ -1,0 +1,19 @@
+﻿@using WebApplication1.Models
+
+@model DealerCarLot
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@Model.Name</h2>
+<p>@Model.Cars[ViewBag.CarIndex].Brand</p>
+<p>@Model.Cars[ViewBag.CarIndex].Color</p>
+
+<span class="btn btn-default">
+    @Html.ActionLink("Previous", "Previous")
+</span>
+
+<span class="btn btn-default">
+    @Html.ActionLink("Next", "Next")
+</span>
